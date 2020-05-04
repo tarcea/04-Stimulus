@@ -14,9 +14,14 @@
   <body>
 
     <!-- TODO: Put your HTML code in here -->
-  <div data-controller="zelda">
+  <div data-controller="zelda" data-zelda-sound="secret.mp3">
     <button class="btn btn-primary btn-lg" data-action="click->zelda#play" data-target="zelda.trigger">
       Click me!
+    </button>
+  </div>
+  <div data-controller="zelda" data-zelda-sound="treasure.mp3">
+    <button data-action="click->zelda#play" data-target="zelda.trigger" class="btn btn-success btn-lg">
+      Treasure!
     </button>
   </div>
 
